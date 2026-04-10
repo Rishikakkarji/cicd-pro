@@ -10,13 +10,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t ci-cd-app .'
+                sh 'docker build -t ci-cd-app1 .'
             }
         }
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 8081:80 ci-cd-app'
+                sh 'docker run -d -p 8082:80 ci-cd-app1'
             }
         }
     }
