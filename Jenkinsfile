@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git '<YOUR_GIT_REPO_URL>'
+                git '<https://github.com/Rishikakkarji/cicd-pro.git>'
             }
         }
 
